@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Button,
   Container,
   AppBar,
   Box,
@@ -9,13 +8,9 @@ import {
   IconButton,
 } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import githubProvider from "../../config/authMethods";
-import { useContext } from "react";
-import TokenContext from "../../context/Token/TokenContext";
 
 
 export default function Navbar() {
-  const validation = useContext(TokenContext);
 
   return (
     <Box>
