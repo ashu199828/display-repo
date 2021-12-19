@@ -21,29 +21,20 @@ export default function Body() {
     >
       <Box>
         <Typography
-          color="lightgrey"
-          my={10}
-          sx={{ fontSize: 72, fontWeight: 900 }}
+          color="mintcream"
+          my={3}
+          sx={{ fontSize: 100, fontWeight: 300 }}
         >
-          Github OAuth implentation using Firebase With GraphQL client Rely
-          <Typography color="gray" mt={2}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </Typography>
+          OAuth App with React Relay (GraphQl)
         </Typography>
 
         <Button
           onClick={() => validation.signInAuth(githubProvider)}
           size="large"
           variant="contained"
-          sx={{ fontSize: 18 }}
+          sx={{ fontSize: 18 ,backgroundColor:"black","&:hover":{backgroundColor:"gray",color:"black"}}}
         >
-          Get Started
+         GitHub Login
           <DoubleArrowIcon />
         </Button>
       </Box>

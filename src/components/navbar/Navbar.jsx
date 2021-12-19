@@ -19,12 +19,12 @@ export default function Navbar() {
 
   return (
     <Box>
-      <AppBar position="static">
+      <AppBar position="static" sx={{backgroundColor:"black"}}>
         <Toolbar>
           <Container
             sx={{
               display: "flex",
-              justifyContent: "space-between",
+              justifyContent: "center",
               flexGrow: 1
             }}
           >
@@ -43,13 +43,8 @@ export default function Navbar() {
                 mx={1}
                 sx={{ fontWeight: 700, fontSize: 18, letterSpacing: 2 }}
               >
-                GitHub Improv
+                OAuth-Application
               </Typography>
-            </Box>
-            <Box>
-              <Button onClick={() => validation.signInAuth(githubProvider)} size="large" variant="outlined" color="inherit" sx={{fontWeight:700}}>
-                Login via GitHub
-              </Button>
             </Box>
           </Container>
         </Toolbar>
